@@ -1,0 +1,251 @@
+.hide {
+    display: none;
+}
+
+body {
+    background: url("../images/bg.jpg") no-repeat center center fixed; /* Center the background */
+    background-size: cover; /* Make the background cover the entire area */
+}
+
+
+.relative {
+
+    display: flex;
+    justify-content: left;
+    /* Center horizontally */
+    align-items: center;
+    /* Center vertically */
+    height: 100vh;
+    width: 100%;
+}
+
+.loginWrapper {
+    max-width: 45%;
+    padding: 30px 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 0 20px rgba(255, 255, 255, 0.6);
+    /* Added glow effect */
+    background-color: #151b27;
+    transition: box-shadow 0.5s ease;
+    /* Smooth transition for hover effect */
+
+}
+
+.loginWrapper:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 0 30px rgba(255, 255, 255, 1);
+    /* Stronger glow on hover */
+}
+
+.login-title h3 {
+    color: white;
+    text-transform: uppercase;
+    font-size: 20px;
+    text-align: center;
+}
+
+.login-company {
+    text-align: center;
+}
+
+.login-title {
+    margin-bottom: 35px;
+}
+
+.companyImg {
+    width: 40%;
+    display: inline-block;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    background: white;
+    position: relative;
+    margin-top: -1px;
+}
+
+.companyImg img {
+    width: 100%;
+}
+
+.companyImg img:nth-child(2) {
+    width: 20%;
+    position: absolute;
+    bottom: -9%;
+    right: -6%;
+}
+
+.companyImg:nth-child(1) {
+
+    margin-right: 40px;
+}
+
+form p {
+    text-align: center;
+    color: white;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+form p span {
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #f7943c;
+}
+
+.form-turbo p span {
+
+    color: #eebe2c;
+}
+
+form input {
+    outline: none;
+    padding: 10px 45px;
+    width: 100%;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    height: 50px;
+}
+
+.companyImg span {
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+input[type="submit"] {
+    border: none;
+    background: #738090;
+    color: white;
+    font-weight: 600;
+    font-size: 17px;
+    text-transform: uppercase;
+    transition: background 0.3s ease;
+    /* Smooth transition for background color */
+}
+
+form {
+    position: relative;
+}
+
+.inputWrapper,
+.passWrapper {
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.inputWrapper i.fa-solid.fa-user,
+.passWrapper i.fa-solid.fa-lock {
+    position: absolute;
+    top: 3%;
+    left: 0%;
+    color: lightgrey;
+    width: 50px;
+    height: 45px;
+    text-align: center;
+    padding: 13px 0px;
+}
+
+.company-capram {
+    border: 3px solid #f7943c;
+}
+
+[type=radio] {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.capram-check,
+.turbo-check {
+    transition: opacity 1s ease;
+}
+
+.slider-image {
+    border-radius: 5px;
+}
+
+.btnGradient {
+
+    background: #f7943c !important;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #eebe2c, #f7943c) !important;
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #eebe2c, #f7943c) !important;
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.msgWarning {
+    color: red;
+    margin-top: 15px;
+    text-align: center;
+    transition: display 0.4s ease;
+}
+
+
+/*********************************************************************/
+
+/********************** Media Query Start **************************/
+
+
+
+
+/* Extra Large Devices (Large Desktops) */
+@media (min-width: 1201px) {
+    /* Styles for extra large devices (large desktops) */
+}
+
+/* Large Devices (Desktops) */
+@media (min-width: 1025px) and (max-width: 1200px) {
+
+
+}
+
+/* Medium Devices (Laptops and Landscape Tablets) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .loginWrapper {
+        max-width: 60%;
+    }
+
+
+    .companyImg:nth-child(1) {
+        margin-right: 20px;
+    }
+}
+
+/* Small Devices (Portrait Tablets and Large Phones) */
+@media (min-width: 481px) and (max-width: 768px) {
+    body {
+        background: url(../images/bg.jpg) no-repeat left center;
+        /* Align to the left */
+        background-size: auto 100%;
+        /* Keep the width auto and set height to cover the full height */
+    }
+
+    .loginWrapper {
+        max-width: 80%;
+        margin: 0px auto;
+    }
+
+
+}
+
+/* Extra Small Devices (Phones) */
+@media (min-width: 320px) and (max-width: 480px) {
+
+
+    .companyImg:nth-child(1) {
+        margin-right: 5px;
+    }
+    
+     .loginWrapper {
+        max-width: 80%;
+        margin: 0px auto;
+    }
+    
+      body {
+        background: url(../images/bg.jpg) no-repeat left center;
+        /* Align to the left */
+        background-size: auto 100%;
+        /* Keep the width auto and set height to cover the full height */
+    }
+
+}
